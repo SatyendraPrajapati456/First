@@ -5,8 +5,7 @@
     <title>Crypto Guard</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="project01.css">
-    
+    <link rel="stylesheet" href="project01.css"> 
 </head>
 <body>
     <div class="navbar">
@@ -25,9 +24,12 @@
             <p class="highlight">Secure Your Data with Ease</p>
             <h1>Effortless File Encryption</h1>
             <p>Unlock the Power of Secure File Management. Our intuitive platform provides comprehensive encryption and decryption solutions.</p>
+            <input type="file" id="fileInput">
+            <br>
             <div class="buttons">
                 <button class="btn-decrypt" onclick="handleFile('decrypt')">Decrypt</button>
                 <button class="btn-encrypt" onclick="handleFile('encrypt')">Encrypt</button>
+                <a id="downloadLink" style="display: none;">Download Encrypted File</a>
             </div>
         </div>
         <div class="image-container">
@@ -41,7 +43,6 @@
             </div>
         </div>
     </div>
-<input type="file" id="fileInput" style="display: none;" accept=".txt/.mp4/.pdf/.doc/.docx/.xls/.xlsx/.ppt/.pptx/.zip/.rar/" onchange="processFile(event)">
  <script  src="project01.js"></script>
 </body>
 </html>
