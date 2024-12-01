@@ -29,7 +29,65 @@
             <div class="buttons">
                 <button class="btn-encrypt" onclick="encryptFile()">Encrypt</button>
                 <button class="btn-decrypt" onclick="decryptFile()">Decrypt</button>
-                <a id="downloadLink" style="display: none;">Download Encrypted File</a>
+                <div class="output">
+                    <a id="downloadEncrypted" class="downloadLink" download="encrypted_audio.wav" style="display: none;">Download Encrypted File</a>
+                    <br>
+                    <a id="downloadDecrypted" class="downloadLink" download="decrypted_audio.wav" style="display: none;">Download Decrypted File</a>
+                </div>
+                <!-- <a id="downloadLink" style="display: none;">Download Encrypted File</a> -->
+            </div>
+        </div>
+        <div class="image-container">
+            <img alt="Illustration of a file encryption interface with a lock icon" height="500"
+                src="https://storage.googleapis.com/a1aa/image/la1gKZnSGNIRJ1DObReQGTGIH5QpvrVI1FAryyzXUQbG4l6JA.jpg"
+                width="500" />
+            <div class="overlay">
+                <img alt="Small lock icon" height="100"
+                    src="https://storage.googleapis.com/a1aa/image/jcdmMWDvNcrTOhXhSoBpCnL3UoNB2MTXlPpByoLJJprD8S9E.jpg"
+                    width="100" />
+            </div>
+        </div>
+    </div>
+ <script  src="project01.js"></script>
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Guard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="project01.css"> 
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <i class="fas fa-shield-alt"></i>Crypto Guard</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+            <a href="#">FAQ</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <p class="highlight">Secure Your Data with Ease</p>
+            <h1>Effortless File Encryption</h1>
+            <p>Unlock the Power of Secure File Management. Our intuitive platform provides comprehensive encryption and decryption solutions.</p>
+            <input type="file" id="fileInput">
+            <br>
+            <div class="buttons">
+                <button class="btn-encrypt" onclick="encryptFile()">Encrypt</button>
+                <button class="btn-decrypt" onclick="decryptFile()">Decrypt</button>
+                <div class="output">
+                    <a id="downloadEncrypted" class="downloadLink" download="encrypted_audio.wav" style="display: none;">Download Encrypted File</a>
+                    <br>
+                    <a id="downloadDecrypted" class="downloadLink" download="decrypted_audio.wav" style="display: none;">Download Decrypted File</a>
+                </div>
+                <!-- <a id="downloadLink" style="display: none;">Download Encrypted File</a> -->
             </div>
         </div>
         <div class="image-container">
